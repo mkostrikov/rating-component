@@ -11,5 +11,47 @@
 
     <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <main class="l-main">
+      <h1>Interactive rating component</h1>
+      <article class="b-rating-component">
+        <div class="b-rating-component__frontside">
+          <h2 class="b-rating-component__headline">How did we do?</h2>
+          <p class="b-rating-component__description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <form class="b-rating-component__form" action="#">
+            <fieldset>
+              <input type="radio" id="rating-1" name="rating" value="1" />
+              <label class="b-rating-component__label" for="rating-1"></label>
+
+              <input type="radio" id="rating-2" name="rating" value="2" />
+              <label class="b-rating-component__label" for="rating-2"></label>
+
+              <input type="radio" id="rating-3" name="rating" value="3" />
+              <label class="b-rating-component__label" for="rating-3"></label>
+
+              <input type="radio" id="rating-4" name="rating" value="4" />
+              <label class="b-rating-component__label" for="rating-4"></label>
+
+              <input type="radio" id="rating-5" name="rating" value="5" />
+              <label class="b-rating-component__label" for="rating-5"></label>
+            </fieldset>
+            <button>Submit</button>
+          </form>
+        </div>
+        <div class="b-rating-component__backside">
+          <p class="b-rating-component__output">
+            You selected <span>0</span> out of 5
+          </p>
+          <h2 class="b-rating-component__headline">Thank you!</h2>
+          <p class="b-rating-component__description">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
