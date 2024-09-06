@@ -10,14 +10,15 @@
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
 
     <link rel="stylesheet" href="/src/styles/main.scss" />
+    <script defer type="module" src="/src/assets/scripts/main.js"></script>
   </head>
   <body>
     <main class="l-main">
       <h1>Interactive rating component</h1>
-      <article class="b-rating-component">
+      <article class="b-rating-component" id="rating-component">
         <div class="b-rating-component__backside">
           <p class="b-rating-component__output">
-            You selected <span>0</span> out of 5
+            You selected <span id="rating-component-output">0</span> out of 5
           </p>
           <h2 class="b-rating-component__headline">Thank you!</h2>
           <p class="b-rating-component__description">
@@ -26,13 +27,20 @@
           </p>
         </div>
 
-        <div class="b-rating-component__frontside">
+        <div
+          class="b-rating-component__frontside"
+          id="rating-component-frontside"
+        >
           <h2 class="b-rating-component__headline">How did we do?</h2>
           <p class="b-rating-component__description">
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <form class="b-rating-component__form" action="#">
+          <form
+            class="b-rating-component__form"
+            action="#"
+            id="rating-component-form"
+          >
             <fieldset>
               <input type="radio" id="rating-1" name="rating" value="1" />
               <label class="b-rating-component__label" for="rating-1"></label>

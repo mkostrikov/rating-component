@@ -4,6 +4,10 @@
   display: grid;
   grid-template-areas: "col";
 
+  &--submit > &__frontside {
+    display: none;
+  }
+
   &__frontside,
   &__backside {
     grid-area: col;
