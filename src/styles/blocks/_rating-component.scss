@@ -127,6 +127,15 @@
     border-radius: 100%;
   }
 
+  &__label > span {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
   &__label:before {
     content: "";
     block-size: 42px;
