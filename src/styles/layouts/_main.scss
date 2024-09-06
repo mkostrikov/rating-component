@@ -12,6 +12,6 @@
     }
 
     & > h1 {
-        inline-size: 1px;
+        max-inline-size: 10ch;
     }
 }
