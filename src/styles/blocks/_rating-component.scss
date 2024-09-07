@@ -116,7 +116,7 @@
     background-color: var(--neutral-color-3);
   }
 
-  &__form > fieldset > input:focus + label {
+  &__form > fieldset > input:focus-visible + label {
     outline: 4px solid var(--neutral-color-1);
     outline-offset: 6px;
   }
